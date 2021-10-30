@@ -20,7 +20,7 @@
 
 // export default Header;
 import React from 'react';
-import { Button, Container, Nav, Navbar } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 // import useAuth from '../../hooks/useAuth'
 
@@ -40,6 +40,7 @@ const Header = () => {
                         <Nav.Link as={Link} to="/services">Services</Nav.Link>
                         <Nav.Link as={Link} to="/deliveryman">Delivery Man</Nav.Link>
                         <Nav.Link as={Link} to="/man" > Man</Nav.Link>
+                        <Nav.Link as={Link} to="/delivery-update" > Delivery Update</Nav.Link>
                         {/* <Nav.Link as={HashLink} to="/home#login">Login</Nav.Link> */}
 
                         {/* {

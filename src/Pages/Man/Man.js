@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+
 import { Link } from 'react-router-dom';
 
 const Man = () => {
@@ -7,7 +8,27 @@ const Man = () => {
         fetch('http://localhost:5000/users')
             .then(res => res.json())
             .then(data => setUsers(data));
-    }, [])
+    }, []);
+    //DELETE AN USER
+    const handleDeleteUser = id => {
+        const proceed = window.confirm('Are you sure, you want to delete');
+        if (proceed) {
+            const url = `http://localhost:5000/users/${id}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    if (data.deletedCount > 0) {
+                        alert('deleted successfully');
+                        const remainingUsers = users.filter(user => user._id !== id);
+                        console.log(remainingUsers);
+                        setUsers(remainingUsers);
+                    }
+                });
+        }
+    }
     return (
         <div>
             <h2>Users Available :{users.length}</h2>
@@ -16,8 +37,8 @@ const Man = () => {
                     users.map(user => <li
                         key={user._id}
                     >{user.name}::{user.email}
-                        <button>Update</button>
-                        <button>X</button></li>)
+                        <Link to={`/users/update/${user._id}`}><button>Update</button></Link>
+                        <button onClick={() => handleDeleteUser(user._id)}>X</button></li>)
                 }
             </ul>
         </div>
