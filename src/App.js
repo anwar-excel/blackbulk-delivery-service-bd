@@ -5,6 +5,7 @@ import Header from './Pages/Header/Header';
 import DeliveryMan from './Pages/DeliveryMan/DeliveryMan';
 import Man from './Pages/Man/Man';
 import DeliveryUpdate from './Pages/DeliveryUpdate/DeliveryUpdate';
+import Footer from './Pages/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <DeliveryUpdate></DeliveryUpdate>
           </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );

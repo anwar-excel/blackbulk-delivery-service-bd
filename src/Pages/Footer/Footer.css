@@ -1,0 +1,36 @@
+.footer{
+   background-image: url(../../../src/images/footer/footer.jpg);
+   height: 100%;
+   width: 100% ;
+   margin-top: 30px;
+   font-family: 'Bebas Neue', cursive;
+   
+
+}
+.image-text{
+    margin-top: 30px;
+    margin-bottom: 30;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+    
+    
+    
+}
+.image-text  img{
+    height: 80px;
+    width: 80px;
+}
+.image-text  p{
+    text-align: justify;
+    font-size: 40px;
+    text-decoration: brown;
+}
+.footer p{
+    margin: auto;
+    margin-top: 20px;
+    font-weight: 30px;
+    align-items: center;
+}
