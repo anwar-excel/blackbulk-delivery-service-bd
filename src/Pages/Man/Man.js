@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Man = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/users')
+        fetch('http://localhost:7000/users')
             .then(res => res.json())
             .then(data => setUsers(data));
     }, []);
@@ -13,7 +13,7 @@ const Man = () => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure, you want to delete');
         if (proceed) {
-            const url = `http://localhost:5000/users/${id}`;
+            const url = `/users/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })

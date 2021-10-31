@@ -1,9 +1,15 @@
 .footer{
-   background-image: url(../../../src/images/footer/footer.jpg);
-   height: 100%;
-   width: 100% ;
-   margin-top: 30px;
+   background-image: url(../../../src/images/footer/1.jpg);
+   height: auto;
+   width: auto ;
+   
    font-family: 'Bebas Neue', cursive;
+   background-repeat: no-repeat;
+   background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
    
 
 }
