@@ -20,6 +20,7 @@ const DeliveryMan = () => {
                 if (data.insertedId) {
                     alert('Successfully added the user.')
                     e.target.reset();
+
                 }
             })
         e.preventDefault();
@@ -28,10 +29,10 @@ const DeliveryMan = () => {
 
     return (
         <div>
-            <h2>Please Add details</h2>
+            <h2>Please Add Delivery Man</h2>
             <form onSubmit={handleAddDeliveryMan} >
-                <input type="text" ref={nameRef} name="" id="" />
-                <input type="email" ref={emailRef} name="" id="" />
+                <input type="text" ref={nameRef} name="" id="" placeholder="Enter Your Name" />
+                <input type="email" ref={emailRef} name="" id="" placeholder="Enter Your Email" />
                 <input type="submit" value="ADD" />
             </form>
         </div>

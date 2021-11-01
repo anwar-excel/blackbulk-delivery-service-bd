@@ -36,7 +36,8 @@ const Man = () => {
                 {
                     users.map(user => <li
                         key={user._id}
-                    >{user.name}::{user.email}
+                    ><h2>Name:{user.name}</h2> <br />
+                        Email Address: {user.email}
                         <Link to={`/users/update/${user._id}`}><button>Update</button></Link>
                         <button onClick={() => handleDeleteUser(user._id)}>X</button></li>)
                 }

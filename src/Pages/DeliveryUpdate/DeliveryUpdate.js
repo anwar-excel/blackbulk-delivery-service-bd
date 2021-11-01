@@ -24,7 +24,7 @@ const DeliveryUpdate = () => {
     }
 
     const handleUpdateUser = e => {
-        const url = `http://localhost:5000/users/${id}`;
+        const url = `https://secret-cove-95880.herokuapp.com/users/${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -20,10 +20,7 @@ const Food = () => {
 
                     </Foods>)
                 }
-                {/* {error.map(foo => <Foods
-                    key={foo._id}
-                    food={foo}
-                ></Foods>)} */}
+
             </div>
         </div>
     );
