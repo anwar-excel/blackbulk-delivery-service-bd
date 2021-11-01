@@ -1,0 +1,15 @@
+.single-details{
+    
+}
+.single-details p{
+text-align: justify;
+padding-left: 10px;
+padding-left: 10%;
+padding-right: 10%;
+}
+
+.single-details img{
+    width: 40%;
+    height: 40%;
+    align-self: center;
+}
