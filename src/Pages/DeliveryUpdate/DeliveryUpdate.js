@@ -44,7 +44,7 @@ const DeliveryUpdate = () => {
     }
     return (
         <div>
-            <h2>wdcydcycwdwdcify</h2>
+
             <h1>Update : {user.name} {user.email}</h1>
             <p><small>{id}</small></p>
             <form onSubmit={handleUpdateUser}>

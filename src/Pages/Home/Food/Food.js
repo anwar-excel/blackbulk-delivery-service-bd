@@ -12,7 +12,7 @@ const Food = () => {
 
     return (
         <div>
-            <h2>Food Service</h2>
+
             <div className="food-align">
                 {
                     error.map(code => <Foods

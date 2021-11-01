@@ -13,6 +13,7 @@ const Foods = (props) => {
             <Link to={`/update/${_id}`}>
                 <button>Details</button>
             </Link>
+
         </div>
     );
 };

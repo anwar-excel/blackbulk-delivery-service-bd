@@ -24,7 +24,7 @@ const Header = () => {
                         <Nav.Link as={Link} to="/login" > Login</Nav.Link>
 
                         <Nav.Link as={Link} to="/add-food" > Add Food</Nav.Link>
-                        <Nav.Link as={Link} to="/delivery-update" > Delivery Update</Nav.Link>
+
 
                         <span>{user.displayName} </span>
                         {user?.email && <button onClick={logout}>log out</button>}

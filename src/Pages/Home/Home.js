@@ -1,5 +1,6 @@
 import React from 'react';
 import useAuth from '../../hooks/useAuth';
+import AddFood from './AddFood/AddFood';
 import Banner from './Banner/Banner';
 import Food from './Food/Food';
 
@@ -13,6 +14,7 @@ const Home = () => {
 
             <h2>Our Food service</h2>
             <Food></Food>
+            <AddFood></AddFood>
 
         </div>
     );
