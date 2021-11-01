@@ -11,7 +11,8 @@ import Food from './Pages/Home/Food/Food';
 import AddFood from './Pages/Home/AddFood/AddFood';
 import Single from './Pages/Single/Single';
 import AuthProvider from './context/AuthProvider';
-// import Login from '../src/Pages/Login';
+import Login from '../src/Pages/Login/Login';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 
 
@@ -25,9 +26,9 @@ function App() {
             <Route exact path="/">
               <Home></Home>
             </Route>
-            <Route exact path="/food">
+            <PrivateRoute exact path="/food">
               <Food></Food>
-            </Route>
+            </PrivateRoute>
 
             <Route path='/deliveryman'>
               <DeliveryMan></DeliveryMan>
@@ -35,9 +36,9 @@ function App() {
             <Route path='/man'>
               <Man></Man>
             </Route>
-            {/* <Route path='/login'>
+            <Route path='/login'>
               <Login></Login>
-            </Route> */}
+            </Route>
 
             <Route path='/update/:id'>
               <Single></Single>
