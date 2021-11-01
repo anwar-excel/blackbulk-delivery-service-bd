@@ -9,7 +9,7 @@ const AddFood = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:7000/food', data)
+        axios.post('https://secret-cove-95880.herokuapp.com/food', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('added successfully');

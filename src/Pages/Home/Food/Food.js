@@ -5,7 +5,7 @@ import './Food.css';
 const Food = () => {
     const [error, setError] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:7000/food')
+        fetch('https://secret-cove-95880.herokuapp.com/food')
             .then(res => res.json())
             .then(data => setError(data));
     }, []);

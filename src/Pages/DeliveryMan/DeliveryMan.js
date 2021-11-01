@@ -8,7 +8,7 @@ const DeliveryMan = () => {
         const email = emailRef.current.value;
 
         const newUser = { name, email };
-        fetch('http://localhost:7000/users', {
+        fetch('https://secret-cove-95880.herokuapp.com/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

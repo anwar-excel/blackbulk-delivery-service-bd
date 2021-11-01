@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Man = () => {
     const [users, setUsers] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:7000/users')
+        fetch('https://secret-cove-95880.herokuapp.com/users')
             .then(res => res.json())
             .then(data => setUsers(data));
     }, []);
